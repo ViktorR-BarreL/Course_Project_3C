@@ -290,6 +290,7 @@ class MainWindow(QWidget):
         if index == 0:
             self.schedule_tab.current_date = QDate.currentDate()
             self.schedule_tab.update_schedule()
+            self.schedule_tab.load_data()
         elif index == 1:
             self.groups_tab.groups_list.clearSelection()
             self.groups_tab.load_groups()
